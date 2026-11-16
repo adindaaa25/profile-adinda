@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: black;
+    line-height: 1.0;
+}
+nav{
+    background-color: #f1f5f9;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a :hover,
+nav a.aktif{
+    background-color: rgb(97, 21, 46);
+    border-radius: 5px;
+}
+header{
+    background-color: rgb(97, 21, 46);
+    color: #f1f5f9;
+    text-align: center;
+    padding: 25px 40px;
+}
+main{
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+section,article{
+    background:white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000012;
+}
+h2{
+    color: rgb(65, 5, 25);
+    margin-bottom: 15px;
+}
+h3{
+    color: rgb(97, 21, 46);
+    margin-bottom: 10px;
+}
+.format{
+    text-align: center;
+}
+.format img,figure img{
+    width: 170px;
+    height: 170px;object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+footer{
+    background-color: rgb(65, 5, 25);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th{
+    background-color: pink;
+}
+label{
+    display: block;
+    margin-top: 12PX;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial;
+}
+@media (max-width:600px){
+    main{
+        width: 95%
+    }
+    nav a{
+        display: flex;
+    }
+    header{
+        padding: 25px;
+    }
+    }
+    button{
+        background-color: rgb(97, 21, 46);
+        color: aliceblue;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
